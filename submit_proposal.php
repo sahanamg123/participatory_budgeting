@@ -85,6 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            margin-top: 10px;
         }
 
         button:hover {
@@ -93,6 +94,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .message {
             color: #FFD700;
+        }
+
+        .back-button {
+            width: 85%;
+            padding: 10px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background: #c0392b;
         }
     </style>
 </head>
@@ -112,6 +131,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <button type="submit">Submit Proposal</button>
         </form>
+
+        <!-- 🔹 Go Back Button -->
+        <br>
+        <a href="dashboard.php" class="back-button">⬅️ Go Back</a>
     </div>
 
 </body>
